@@ -1,6 +1,8 @@
 from flask import Flask
 from flask_restful import Resource, Api
+from flask_jwt import JWT
 from resources.user import UserRegister
+from authentication.security import authenticate, identity
 import os
 
 app = Flask(__name__)
@@ -10,6 +12,7 @@ app.secret_key = 'rohan'
 api = Api(app)
 
 
+jwt = JWT(app, authenticate, identity)
 @app.route('/')
 def hello():
     return "Bon Voyage with this BoilerPlate"
