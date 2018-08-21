@@ -5,7 +5,8 @@ A boilerplate repository to jump start flask projects
 ## Getting Started
 The database url has to be set as an evironment variable 
 ```
-export [DATABASE_URI] = ...
+SET [DATABASE_URL] = export DATABASE_URL="postgresql://localhost/wordcount_dev"
+SET [ DEV ENV ] = export FLASK_ENV='development'
 ```
 I will be adding the detailed description soon
 
