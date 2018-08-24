@@ -1,6 +1,9 @@
 # Flask Boilerplate
 
-A boilerplate repository to jump start flask projects.
+A boilerplate repository to jump start flask projects. Just clone it
+to start a project with JWT Authentication, PostgreSQL database
+connectivity, admin panel and sample template for the UI. The repo
+is Heroku config ready.
 
 ## Boilerplate Features
 * **SQLAlchemy-Postgres Database**
