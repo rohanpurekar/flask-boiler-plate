@@ -61,7 +61,7 @@ database.
 
 ### Authentication
 Flask-JWT package is used for JWT token based authentication.
- The package is sent the username as password. The user details
+ On the api the username as password are sent. The user details
   are validated and a token is sent on successful authentication. The url
  for authentication is provided by the package itself. Remember,
  the port number is based on what is given in the app.py file by you.
