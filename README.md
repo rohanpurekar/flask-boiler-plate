@@ -1,12 +1,17 @@
 # Flask Boilerplate
 
-A boilerplate repository to jump start flask projects
+A boilerplate repository to jump start flask projects.
 
 ## Getting Started
-The database url has to be set as an evironment variable 
+It is advisable to clone this flask repository inisde a virtual environment.
+The database used is PostgreSQL. SQLAlchemy is used to perform database operations.
+The database URL has to be set as an environment variable as the code fetches this
+variable. This is beneficial since during the deployment on Heroku, it fetches the
+same variable.
+
 ```
-SET [DATABASE_URL] = export DATABASE_URL="postgresql://localhost/wordcount_dev"
-SET [ DEV ENV ] = export FLASK_ENV='development'
+SET [DATABASE_URL] = export DATABASE_URL="postgresql://localhost/<db name>"
+SET [DEV_ENV] = export FLASK_ENV='development'
 ```
 I will be adding the detailed description soon
 
