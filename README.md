@@ -2,6 +2,13 @@
 
 A boilerplate repository to jump start flask projects.
 
+## Boilerplate Features
+* **SQLAlchemy-Postgres Database**
+* **Sample User Model**
+* **JWT Authentication**
+* **Heroku Deployment Ready Config**
+* **Argon2 Cffi Password Hashing**
+
 ## Getting Started
 It is advisable to clone this flask repository inisde a virtual environment.
 The database used is PostgreSQL. 
@@ -22,7 +29,7 @@ on Heroku, it fetches the same variable. Set the flask environment as developmen
 The dependencies are stored in requirements.txt file. In the root
 directory run the following command to install the dependencies. 
 ```
-pip install
+    pip install
 ```
 The data models need to be migrated for changes to be made to the 
 database like Django. The psycopg2 package is used to work with
@@ -48,12 +55,22 @@ This command will generate the migration files in the versions
  ```
 This command will be responsible for applying the changes to the
 database.
-## Boilerplate Features
-* **SQLAlchemy Postgres Database**
-* **Sample User Model**
-* **JWT Authentication**
-* **Heroku Deployment Ready Config**
-* **Argon2 Cffi Password Hashing**
+
+####Authentication
+Flask-JWT package is used for JWT token based authentication.
+ The package is sent the username as password. The user details
+  are validated and a token is sent on successful authentication. The url
+ for authentication is provided by the package itself. Remember,
+ the port number is based on what is given in the app.py file by you.
+ 
+ ```
+     http://127.0.0.1:5000/auth
+ ```
+####Flask Admin Panel
+    Coming soon
+
+####Templates
+    Coming soon
 
 ## Authors
 
