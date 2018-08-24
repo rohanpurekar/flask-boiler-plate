@@ -56,7 +56,7 @@ This command will generate the migration files in the versions
 This command will be responsible for applying the changes to the
 database.
 
-####Authentication
+##Authentication
 Flask-JWT package is used for JWT token based authentication.
  The package is sent the username as password. The user details
   are validated and a token is sent on successful authentication. The url
@@ -66,11 +66,16 @@ Flask-JWT package is used for JWT token based authentication.
  ```
      http://127.0.0.1:5000/auth
  ```
-####Flask Admin Panel
+##Flask Admin Panel
+```
     Coming soon
+```   
 
-####Templates
+
+##Templates
+```
     Coming soon
+``` 
 
 ## Authors
 
