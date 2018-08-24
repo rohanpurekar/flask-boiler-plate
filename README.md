@@ -66,13 +66,13 @@ Flask-JWT package is used for JWT token based authentication.
  ```
      http://127.0.0.1:5000/auth
  ```
-##Flask Admin Panel
+### Flask Admin Panel
 ```
     Coming soon
 ```   
 
 
-##Templates
+### Templates
 ```
     Coming soon
 ``` 
