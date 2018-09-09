@@ -69,6 +69,11 @@ Flask-JWT package is used for JWT token based authentication.
  ```
      http://127.0.0.1:5000/auth
  ```
+### Heroku Execution Process
+* The uwsgi.ini file contains run:app which means the run.py file is used for execution
+* The run.py contains a decorator @app.before_first_request which facilitates the creation of tables
+
+
 ### Heroku Deployment
 * Create an app on Heroku
 * The Procfile and uwsgi.ini has the settings
