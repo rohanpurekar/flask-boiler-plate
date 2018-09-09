@@ -12,12 +12,14 @@ class UserModel(db.Model):
     last_name = db.Column(db.String(80))
     username = db.Column(db.String(80))
     password = db.Column(db.String(160))
+    dob = db.Column(db.String(80))
 
-    def __init__(self, first_name, last_name, username, password):
+    def __init__(self, first_name, last_name, username, password, dob):
         self.first_name = first_name
         self.last_name = last_name
         self.username = username
         self.password = ph.hash(password)
+        self.password = dob
 
     def __repr__(self):
         return '<id {}>'.format(self.id)
