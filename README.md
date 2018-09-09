@@ -69,6 +69,12 @@ Flask-JWT package is used for JWT token based authentication.
  ```
      http://127.0.0.1:5000/auth
  ```
+### Heroku Deployment
+* Create an app on Heroku
+* The Procfile and uwsgi.ini has the settings
+* Edit environment variables on Heroku APP_SETTINGS=config.StagingConfig, FLASK_ENV=Staging
+* Create pipeline with the github repo
+* Enable automatic deploys
 ### Flask Admin Panel
 ```
     Coming soon
