@@ -19,7 +19,7 @@ class UserModel(db.Model):
         self.last_name = last_name
         self.username = username
         self.password = ph.hash(password)
-        self.password = dob
+        self.dob = dob
 
     def __repr__(self):
         return '<id {}>'.format(self.id)
