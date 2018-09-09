@@ -23,6 +23,11 @@ class UserRegister(Resource):
                         required=True,
                         help="This field cannot be blank"
                         )
+    parser.add_argument('dob',
+                        type=str,
+                        required=True,
+                        help="This field cannot be blank"
+                        )
 
     def post(self):
         data = UserRegister.parser.parse_args()
