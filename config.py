@@ -13,3 +13,8 @@ class Config(object):
 class DevelopmentConfig(Config):
     DEVELOPMENT = True
     DEBUG = True
+
+
+class StagingConfig(Config):
+    DEVELOPMENT = True
+    DEBUG = False
